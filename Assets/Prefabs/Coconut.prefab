@@ -65,12 +65,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.110180855}
+  m_Offset: {x: 0, y: 0.08693737}
   serializedVersion: 2
-  m_Radius: 0.7104709
+  m_Radius: 0.5600303
 --- !u!50 &3858628574351784746
 Rigidbody2D:
   serializedVersion: 4
@@ -124,7 +124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 88b3e2cb9a1a49b4fa75a71dd26fb96d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76199996
+      value: 0.617
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 88b3e2cb9a1a49b4fa75a71dd26fb96d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -186,7 +186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 88b3e2cb9a1a49b4fa75a71dd26fb96d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.474
+      value: -0.369
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 88b3e2cb9a1a49b4fa75a71dd26fb96d, type: 3}
       propertyPath: m_LocalPosition.z
