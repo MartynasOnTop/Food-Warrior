@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] fruits;
+    public GameObject bombPrefab;
+    public GameObject fruitPrefab;
 
-    private void Start()
+    public List<Wave> waves;
+
+    async void Start()
     {
-        InvokeRepeating("Spawn", 1f, 1f);
+        foreach (var wave in waves)
+        {
+            foreach (var fruit in wave.fruits)
+            {
+                var prefab = fruit.isBomb ? bombPrefab : fruitPrefab;
+                await new WaitForSeconds(fruit.delay);
+                var go = Instantiate(prefab);
+                go.transform.position = new Vector3(fruit.x, -5f, 0);
+                var rb = go.GetComponent<Rigidbody2D>();
+                rb.velocity = fruit.velocity;
+            }
+        }
     }
 
     void Spawn()
     {
-        var fruitCount = Random.Range(1, 5);
-
-        for (int i = 0; i < fruitCount; i++)
-        {
-            var randomFruit = Random.Range(0, fruits.Length);
-            var obt = Instantiate(fruits[randomFruit]);
-            obt.transform.position = new Vector3(Random.Range(-5, 5), -6, 0);
-        }
+        
     }
 }
