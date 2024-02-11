@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5339525589213198150}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 6929972505825103074}
   - {fileID: 8533917500821298690}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!58 &5249025066330281254
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110,7 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9535ea7709145334e870aae04a83705b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodeParticles: {fileID: 3509196256566780297, guid: 2ffb874d3631429468bbca8518802524, type: 3}
+  explodeParticles: {fileID: 3509196256566780297, guid: cabb94a97c0175141932721ab3022850, type: 3}
+  spawnSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
+  sliceSound: {fileID: 8300000, guid: faf32607316e4cc4d8c944f12416772f, type: 3}
+  fruitColor: {r: 0.50323707, g: 1, b: 0.3820755, a: 1}
+  missSound: {fileID: 8300000, guid: 874471c6eda1eed4aa259e2cfc435011, type: 3}
 --- !u!1001 &7468811214761536265
 PrefabInstance:
   m_ObjectHideFlags: 0

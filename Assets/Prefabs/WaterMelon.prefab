@@ -110,7 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9535ea7709145334e870aae04a83705b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodeParticles: {fileID: 3509196256566780297, guid: ee092da66abf5e44a891346b2909ffcd, type: 3}
+  explodeParticles: {fileID: 3509196256566780297, guid: cabb94a97c0175141932721ab3022850, type: 3}
+  spawnSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
+  sliceSound: {fileID: 8300000, guid: 006815963cd8a374cb7124a976d51e6b, type: 3}
+  fruitColor: {r: 1, g: 0.15566039, b: 0.15566039, a: 1}
+  missSound: {fileID: 8300000, guid: 874471c6eda1eed4aa259e2cfc435011, type: 3}
 --- !u!1001 &6122081603899446634
 PrefabInstance:
   m_ObjectHideFlags: 0

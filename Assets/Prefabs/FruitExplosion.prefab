@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8313771139971269185}
   - component: {fileID: 7283415589496005590}
   m_Layer: 0
-  m_Name: PearExplosion
+  m_Name: FruitExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 2.0651114, y: 0.8711469, z: 0.18222332}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8910513363620744723}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &8313771139971269185
@@ -222,8 +223,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.86699814, g: 1, b: 0.4764151, a: 1}
-      maxColor: {r: 0.18781984, g: 1, b: 0, a: 1}
+      minColor: {r: 0.33962262, g: 0.1485849, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4888,3 +4889,65 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1001 &1686857892714490349
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2796398417039950589}
+    m_Modifications:
+    - target: {fileID: 6224294923808357723, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_Name
+      value: FruitSplashParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+--- !u!4 &8910513363620744723 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7836383066677569534, guid: d9d7f4cb79f9f804aac52de0ec1afea5, type: 3}
+  m_PrefabInstance: {fileID: 1686857892714490349}
+  m_PrefabAsset: {fileID: 0}

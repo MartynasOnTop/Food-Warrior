@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject bombPrefab;
-    public GameObject fruitPrefab;
+    public List<GameObject> fruitPrefabs;
 
     public List<Wave> waves;
 
@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
             await new WaitForSeconds(3f);
             foreach (var fruit in wave.fruits)
             {
-                var prefab = fruit.isBomb ? bombPrefab : fruitPrefab;
+                var prefab = fruit.isBomb ? bombPrefab : fruitPrefabs[Random.Range(0, fruitPrefabs.Count)];
 
                 await new WaitForSeconds(fruit.delay);
                 var go = Instantiate(prefab);
