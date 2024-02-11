@@ -115,6 +115,7 @@ MonoBehaviour:
   sliceSound: {fileID: 8300000, guid: 41f2f374a291eff4a893160393c3f724, type: 3}
   fruitColor: {r: 1, g: 0.82659805, b: 0, a: 1}
   missSound: {fileID: 8300000, guid: 874471c6eda1eed4aa259e2cfc435011, type: 3}
+  gameOver: {fileID: 8300000, guid: 3231bd22f1038b247a0471a4dede0412, type: 3}
 --- !u!1001 &6356447357703289334
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fruit : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Fruit : MonoBehaviour
     public AudioClip sliceSound;
     public Color fruitColor;
     public AudioClip missSound;
+    public AudioClip gameOver;
 
     private void Start()
     {
@@ -30,6 +32,11 @@ public class Fruit : MonoBehaviour
         {
             AudioSystem.Play(missSound);
             GameManager.health -= 1;
+            if (GameManager.health <= 0)
+            {
+                AudioSystem.Play(gameOver);
+                Time.timeScale = 0f;
+            }
         }
         Destroy(gameObject);
     }
@@ -42,7 +49,13 @@ public class Fruit : MonoBehaviour
         if (!CompareTag("Bomb")) Split(particles);
         AudioSystem.Play(sliceSound);
 
-        if (CompareTag("Bomb")) GameManager.health = 0;
+        if (CompareTag("Bomb"))
+        {
+            GameManager.health = 0;
+            Time.timeScale = 0f;
+        }
+
+        if (CompareTag("Start")) SceneManager.LoadScene("GamePlay");
 
         Destroy(gameObject);
     }
