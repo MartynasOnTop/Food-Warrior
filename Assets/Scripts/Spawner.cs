@@ -13,12 +13,16 @@ public class Spawner : MonoBehaviour
     {
         foreach (var wave in waves)
         {
+            await new WaitForSeconds(3f);
             foreach (var fruit in wave.fruits)
             {
                 var prefab = fruit.isBomb ? bombPrefab : fruitPrefab;
+
                 await new WaitForSeconds(fruit.delay);
                 var go = Instantiate(prefab);
+
                 go.transform.position = new Vector3(fruit.x, -5f, 0);
+
                 var rb = go.GetComponent<Rigidbody2D>();
                 rb.velocity = fruit.velocity;
             }
